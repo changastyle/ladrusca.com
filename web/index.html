@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ladrusca.com | Fotografia superior.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <style>
+            ul
+            {
+                list-style-type: none;
+                
+            }
+            li
+            {
+                float:left;
+                margin:15px;
+                cursor:pointer;
+            }
+            .grilla
+            {
+                margin-top:60px;
+                //overflow-y: scroll;
+                //overflow-x:hidden;
+            }
+            .imgsgrilla
+            {
+                cursor:pointer;
+                padding: 0px;
+                margin: 0px;
+            }
+        </style>
+    </head>
+    <body ng-app="app" ng-controller="drusca">
+        <div class="col-xs-12" style="background-color: rgba(0,0,0,0.70); position: fixed; top:0px; z-index: 2;">
+            <ul style="color:white;">
+                <li>Home</li>
+                <li>Grilla de fotografia </li>
+                <li>Ladrusca what it means?</li>
+                <li>Contacto</li>
+            </ul>
+        </div>
+        
+        <div id="myModal" role="dialog" class="modal fade zoom" >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>S{{fotoSeleccionada}}</p>
+                        <img src="pages/res/img/fot1.jpg" class="col-sm-12">
+                        <p>Some text in the modal.</p>
+                    </div>    
+                    
+                </div>
+            </div>
+        </div>       
+        <div class="container-fluid grilla">
+            <div class="row">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla" data-toggle="modal" data-target="#myModal" ng-click="seleccionar($event)">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+            </div>
+            <div class="row">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+            </div>
+            <div class="row">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+            </div>
+            <div class="row">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+            </div>
+            <div class="row">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+            </div>
+            <div class="row">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+            </div>
+            <div class="row">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+            </div>
+            <div class="row">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+            </div>
+            <div class="row">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+                <img src="pages/res/img/fot1.jpg" class="col-sm-1 img-thumbnail imgsgrilla">
+            </div>
+
+            
+        </div> 
+        
+    </body>
+    <script>
+        app = angular.module('app', []);
+        
+     
+        app.controller('drusca', function($scope, $http) 
+        {
+            $scope.fotoSeleccionada = "";
+            $scope.seleccionar = function($event)
+            {
+                console.log($($event.target).attr('src'));
+                $scope.fotoSeleccionada = $($event.target).attr('src');
+            }
+        }); 
+    </script>
+</html>
